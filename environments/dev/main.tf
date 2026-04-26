@@ -10,7 +10,7 @@ terraform {
   # Uncomment below to use S3 backend for state management
   backend "s3" {
      bucket         = "my-terraform-state-dev"
-     key            = "terraform.tfstate"
+     key            = "dev/ec2/terraform.tfstate"
      region         = "us-east-1"
      encrypt        = true
      dynamodb_table = "terraform-locks"
